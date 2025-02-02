@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  dbTest:
+    image: mysql:latest
+    container_name: dbTest
+    environment:
+      MYSQL_ROOT_PASSWORD: dbTest1234
+      MYSQL_DATABASE: dbTest
+    ports:
+      - "3306:3306"
